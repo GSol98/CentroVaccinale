@@ -1,0 +1,177 @@
+#loading {
+    animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    background-color: rgb(204, 243, 241);
+}
+
+#titoloHeader {
+    color: black;
+}
+
+@media screen and (min-width: 850px) {
+    header {
+        height: 160px;
+    }
+
+    header > div {
+        display: inline-block;
+    }
+
+    #logoHeader > a > img {
+        max-height: 160px;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+    
+    #titoloHeader {
+        text-decoration: none;
+        line-height: 160px;
+        font-size: 4.5em;
+    }
+}
+
+@media screen and (max-width: 849px) and (min-width: 650px) {
+    header {
+        height: 120px;
+    }
+
+    header > div {
+        display: inline-block;
+    }
+
+    #logoHeader > a > img {
+        max-height: 120px;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    
+    #titoloHeader {
+        text-decoration: none;
+        line-height: 120px;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 649px) {
+
+    header {
+        height: 70px;
+    }
+
+    header > div {
+        display: inline-block;
+    }
+
+    #logoHeader > a > img {
+        max-height: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #titoloHeader {
+        text-decoration: none;
+        line-height: 70px;
+        font-size: 1.5em;
+    }
+}
+
+nav {
+    background-color: rgb(228, 253, 255);
+}
+
+.navbarButton {
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 8px;
+    background-color: rgb(228, 251, 253);
+}
+
+.navbarButton:hover {
+    background-color: rgb(218, 254, 255);
+    box-shadow: 2px 2px 5px;
+    font-weight: bold;
+}
+
+#dropdown {
+    background-color: rgb(228, 251, 253);
+}
+
+.navbarDropdownButton{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#corpoPrincipale {
+    background-image: url(../images/sfondo_principale.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 800px){
+    .titolo-principale {
+        text-align: center; 
+        font-size: 10vh; 
+        color: white;
+        text-shadow: 0 0 12px black;
+        height: inherit;
+    }
+    
+    .titolo-secondario {
+		text-align: center; 
+		font-size: 8vh; 
+		color: white;
+		text-shadow: 0 0 5px black;
+	}
+
+    #corpoPrincipale {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 799px){
+    .titolo-principale {
+        text-align: center; 
+        font-size: 7vh; 
+        color: white;
+        text-shadow: 0 0 10px black;
+        height: inherit;
+    }
+    
+    .titolo-secondario {
+		text-align: center; 
+		font-size: 5vh; 
+		color: white;
+		text-shadow: 0 0 5px black;
+	}
+    
+    #corpoPrincipale {
+        height: 500px;
+    }
+}
+
+footer {
+    background-color: rgb(204, 243, 241);
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+.text-white {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.bold-hover:hover {
+    font-weight: bold;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Vaccinale</title>
+    <link rel="icon" href="./images/syringe.ico"/>
+    <link rel="stylesheet" href="./utilities/bootstrap/css/bootstrap.min.css" /> 
+    <script src="./utilities/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./utilities/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="./js/functions.js"></script>
+
+    <link href="./CSS/common.css" rel="stylesheet" />
+    
+    <script>
+    	$(document).ready(() => {
+          	loadInit();
+          	
+            $("#titoloHeader, #imgLogo").click(event => {
+            	event.preventDefault();
+            	loading();
+            	$("#corpoPrincipale").load("/SolaroProject/InitDispatcher", {
+            		welcome: "yes"
+            	});
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class="row m-0">
+        <div id="logoHeader">
+            <a id="imgLogo" href="/">
+                <img id='logo' src="./images/syringe.ico" alt="logo"/>
+            </a>
+        </div>
+        <div>
+            <a id="titoloHeader" href="/">Centro Vaccinazioni</a>
+        </div>
+    </header>
+
+	<div id="navbar"></div>
+
+    <div id="corpoPrincipale" class="container-fluid"></div>
+
+    <footer>
+        &copy; Giuliano Solaro 2021
+    </footer>
+ </body>
+</html>
